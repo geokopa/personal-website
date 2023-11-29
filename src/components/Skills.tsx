@@ -1,4 +1,11 @@
 import ReactImg from "../assets/react.svg";
+import AspNet from "../assets/aspnet.png";
+import CSharp from "../assets/csharp.png";
+import Rabbit from "../assets/rabbit.jpg";
+import Sql from "../assets/sql.jpg";
+import Azure from "../assets/azure.jpg";
+import TypeScript from "../assets/ts.png";
+import JavaScript from "../assets/js.png";
 
 export const Skills = () => {
   return (
@@ -13,38 +20,38 @@ export const Skills = () => {
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={CSharp} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">C#</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={AspNet} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">ASP.NET CORE</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={Sql} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">SQL SERVER</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={Rabbit} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">RabbitMQ</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={Azure} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">Azure</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={TypeScript} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">Typescript</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React" className="w-20 mx-auto" />
-            <p className="my-4">React</p>
+            <img src={JavaScript} alt="React" className="w-20 mx-auto" />
+            <p className="my-4">JavaScript</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
