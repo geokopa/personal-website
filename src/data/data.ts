@@ -1,47 +1,47 @@
 import { Skill, Project, NavItem } from '../types/types';
-import { Images } from '../data/images';
+import { SkillLogos } from '../data/images';
 
 
 export const SkillsDataSet: readonly Skill[] = [
     {
         id: 1,
         name: 'C#',
-        icon: Images.CSharp,
+        icon: SkillLogos.CSharp,
     },
     {
         id: 2,
         name: 'ASP.NET CORE',
-        icon: Images.AspNet,
+        icon: SkillLogos.AspNet,
     },
     {
         id: 3,
         name: 'SQL SERVER',
-        icon: Images.Sql,
+        icon: SkillLogos.Sql,
     },
     {
         id: 4,
         name: 'RabbitMQ',
-        icon: Images.Rabbit,
+        icon: SkillLogos.Rabbit,
     },
     {
         id: 5,
         name: 'Azure',
-        icon: Images.Azure,
+        icon: SkillLogos.Azure,
     },
     {
         id: 6,
         name: 'TypeScript',
-        icon: Images.Ts,
+        icon: SkillLogos.Ts,
     },
     {
         id: 7,
         name: 'JavaScript',
-        icon: Images.Js,
+        icon: SkillLogos.Js,
     },
     {
         id: 8,
         name: 'React JS',
-        icon: Images.React,
+        icon: SkillLogos.React,
     },
 ] as const;
 
@@ -49,7 +49,7 @@ export const SkillsDataSet: readonly Skill[] = [
 export const ProjectsDataSet: readonly Project[] = [
     {
         id: 1,
-        name: 'Project 1',
+        name: 'GenteDrive',
         imageUri: 'https://via.placeholder.com/150',
         demoUri: 'https://via.placeholder.com/150',
         sourceUri: 'https://via.placeholder.com/150',

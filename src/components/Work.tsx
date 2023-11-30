@@ -29,12 +29,12 @@ const Work = () => {
                   </span>
                   <div className="pt-8 text-center">
                     <a href={project.demoUri}>
-                      <button className="text-center rounded-lg px-4 py-3 m-2 border border-black hover:border-purple-600 text-gray-700 font-bold text-lg">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 border-2 border-black hover:border-purple-600 text-gray-700 font-bold text-lg">
                         Demo
                       </button>
                     </a>
                     <a href={project.sourceUri}>
-                      <button className="text-center rounded-lg px-4 py-3 m-2 border border-black hover:border-purple-600 text-gray-700 font-bold text-lg">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 border-2 border-black hover:border-purple-600 text-gray-700 font-bold text-lg">
                         Code
                       </button>
                     </a>
