@@ -16,25 +16,25 @@ const Contact = () => {
         <input
           type="text"
           placeholder="Name"
-          className="mb-4 p-2 bg-[#ccd6f6]"
+          className="mb-4 p-2 bg-white placeholder-black"
           name="name"
           autoComplete="off"
         />
         <input
           type="email"
           placeholder="Email"
-          className="my-4 p-2 bg-[#ccd6f6]"
+          className="my-4 p-2 bg-white placeholder-black"
           name="email"
           autoComplete="off"
         />
         <textarea
-          className="my-4 p-2 bg-[#ccd6f6]"
+          className="my-4 p-2 bg-white placeholder-black"
           rows={10}
           cols={30}
           name="message"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 duration-300 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
       </form>
