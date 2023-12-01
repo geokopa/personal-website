@@ -36,7 +36,7 @@ Aside from his technical prowess, George also demonstrated stellar interpersonal
 
   return (
     <div id="testimonial" className="w-full h-screen bg-[#0a192f]">
-      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="max-w-[1000px] w-full grid md:grid-cols-2 sm:grid-cols-1 gap-8">
           <div className="sm:text-left pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
