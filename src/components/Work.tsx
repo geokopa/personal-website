@@ -12,7 +12,7 @@ const Work = () => {
           <p className="py-8">// Check out some of my recent works</p>
         </div>
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           {/* Grid Item */}
 
           {ProjectsDataSet.map((project: Project) => {

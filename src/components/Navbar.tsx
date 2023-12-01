@@ -10,6 +10,11 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const handleMobileMenuClick = (e) => {
+    e.preventDefault();
+    setNav(false);
+  };
+
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
@@ -48,7 +53,11 @@ export default function Navbar() {
       >
         {NavigationItems.map((item: NavItem) => {
           return (
-            <li key={item.id} className="py-6 text-4xl">
+            <li
+              key={item.id}
+              className="py-6 text-4xl"
+              onClick={handleMobileMenuClick}
+            >
               <Link to={item.uri} smooth={true} offset={50} duration={500}>
                 {item.name}
               </Link>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Testimonial: React.FC<TestimonialProps> = ({ text, name, position }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
+  <div className="bg-white p-6 mx-4 rounded-lg shadow-md">
     <div className="mb-4">
       <p className="text-gray-600 font-semibold">{name}</p>
       <p className="text-gray-500">{position}</p>
@@ -35,9 +35,9 @@ Aside from his technical prowess, George also demonstrated stellar interpersonal
   ];
 
   return (
-    <div id="testimonial" className="w-full h-screen  bg-[#0a192f]">
+    <div id="testimonial" className="w-full h-screen bg-[#0a192f]">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
+        <div className="max-w-[1000px] w-full grid md:grid-cols-2 sm:grid-cols-1 gap-8">
           <div className="sm:text-left pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
               Testimonials
