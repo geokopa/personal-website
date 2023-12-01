@@ -1,19 +1,21 @@
-import CSharp from '../assets/skills/csharp.png';
-import Azure from '../assets/skills/azure.jpg';
-import AspNet from '../assets/skills/aspnet.png';
+import CSharp from '../assets/skills/csharp.svg';
+import Azure from '../assets/skills/azure.svg';
+import NetCore from '../assets/skills/netcore.svg';
 import Js from '../assets/skills/js.png';
 import Ts from '../assets/skills/ts.png';
-import Sql from '../assets/skills/sql.jpg';
+import Sql from '../assets/skills/sql.svg';
 import React from '../assets/skills/react.svg';
-import Rabbit from '../assets/skills/rabbit.jpg';
+import Rabbit from '../assets/skills/rabbit.svg';
+import AspNet from '../assets/skills/aspnet.svg';
 
 export const SkillLogos: Record<string, string> = {
   CSharp,
   Azure,
-  AspNet,
+  NetCore,
   Js,
   Ts,
   Sql,
   React,
   Rabbit,
+  AspNet
 };

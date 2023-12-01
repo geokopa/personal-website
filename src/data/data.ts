@@ -10,19 +10,20 @@ export const SkillsDataSet: readonly Skill[] = [
     },
     {
         id: 2,
+        name: '.NET CORE',
+        icon: SkillLogos.NetCore,
+    },
+    {
+        id: 3,
         name: 'ASP.NET CORE',
         icon: SkillLogos.AspNet,
     },
     {
-        id: 3,
+        id: 4,
         name: 'SQL SERVER',
         icon: SkillLogos.Sql,
     },
-    {
-        id: 4,
-        name: 'RabbitMQ',
-        icon: SkillLogos.Rabbit,
-    },
+    
     {
         id: 5,
         name: 'Azure',
@@ -70,23 +71,23 @@ export const ProjectsDataSet: readonly Project[] = [
     },
     {
         id: 4,
-        name: 'Project 4',
-        imageUri: 'https://via.placeholder.com/150',
-        demoUri: 'https://via.placeholder.com/150',
+        name: 'Congree Style Guide Manager',
+        imageUri: 'https://www.congree.com/fileadmin/user_upload/style_guide_manager_2.png',
+        demoUri: 'https://www.congree.com/en/tools',
         sourceUri: 'https://via.placeholder.com/150',
     },
     {
         id: 5,
-        name: 'Project 5',
-        imageUri: 'https://via.placeholder.com/150',
-        demoUri: 'https://via.placeholder.com/150',
+        name: 'Congree Authoring Tool',
+        imageUri: 'https://www.congree.com/fileadmin/_processed_/1/6/csm_standard_756a959bb0.png',
+        demoUri: 'https://www.congree.com/en/tools',
         sourceUri: 'https://via.placeholder.com/150',
     },
     {
         id: 6,
-        name: 'Project 6',
+        name: 'Ministry of Finance of Georgia Website',
         imageUri: 'https://via.placeholder.com/150',
-        demoUri: 'https://via.placeholder.com/150',
+        demoUri: 'https://www.mof.ge',
         sourceUri: 'https://via.placeholder.com/150',
     },
 ] as const;
@@ -115,6 +116,11 @@ export const NavigationItems: readonly NavItem[] = [
     },
     {
         id: 5,
+        name: 'Testimonials',
+        uri: 'testimonial',
+    },
+    {
+        id: 6,
         name: 'Contact',
         uri: 'contact',
     }
