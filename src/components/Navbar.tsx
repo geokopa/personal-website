@@ -10,9 +10,8 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
-  const handleMobileMenuClick = (e) => {
-    e.preventDefault();
-    setNav(false);
+  const handleMobileMenuClick = () => {
+    setNav((nav) => !nav);
   };
 
   return (
@@ -53,12 +52,14 @@ export default function Navbar() {
       >
         {NavigationItems.map((item: NavItem) => {
           return (
-            <li
-              key={item.id}
-              className="py-6 text-4xl"
-              onClick={handleMobileMenuClick}
-            >
-              <Link to={item.uri} smooth={true} offset={50} duration={500}>
+            <li key={item.id} className="py-6 text-4xl">
+              <Link
+                to={item.uri}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={handleMobileMenuClick}
+              >
                 {item.name}
               </Link>
             </li>
