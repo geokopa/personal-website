@@ -29,7 +29,14 @@ export default function Navbar() {
               key={item.id}
               className="hover:border-b-2 border-pink-600 duration-100 h-8 items-center"
             >
-              <Link to={item.uri} smooth={true} offset={0} duration={500}>
+              <Link
+                to={item.uri}
+                smooth={true}
+                offset={0}
+                duration={500}
+                spy={true}
+                activeClass="text-pink-600"
+              >
                 {item.name}
               </Link>
             </li>

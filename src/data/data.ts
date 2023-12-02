@@ -62,9 +62,9 @@ export const ProjectsDataSet: readonly Project[] = [
   },
   {
     id: 3,
-    name: "Project 3",
-    imageUri: "https://via.placeholder.com/100",
-    demoUri: "https://via.placeholder.com/150",
+    name: "Minisoft LTD Website",
+    imageUri: "../assets/projects/minisoft.png",
+    demoUri: "http://www.minisoft.ge",
     sourceUri: "https://via.placeholder.com/150",
   },
   {
