@@ -29,7 +29,7 @@ export default function Navbar() {
               key={item.id}
               className="hover:border-b-2 border-pink-600 duration-100 h-8 items-center"
             >
-              <Link to={item.uri} smooth={true} offset={50} duration={500}>
+              <Link to={item.uri} smooth={true} offset={0} duration={500}>
                 {item.name}
               </Link>
             </li>
@@ -56,7 +56,7 @@ export default function Navbar() {
               <Link
                 to={item.uri}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
                 onClick={handleMobileMenuClick}
               >
@@ -94,7 +94,7 @@ export default function Navbar() {
             <Link
               to="contact"
               smooth={true}
-              offset={50}
+              offset={0}
               duration={500}
               className="flex justify-between items-center w-full text-white"
             >
