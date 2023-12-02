@@ -11,7 +11,7 @@ const Testimonials: React.FC = () => {
       className="w-full h-full bg-[#0a192f] text-gray-300 p-4"
     >
       <div className="max-w-[1200px] mx-auto flex flex-col sm:justify-center w-full h-full sm:h-screen mb-10">
-        <div className="mt-[30px]">
+        <div className="mt-[30px] sm:mt-0">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 py-4">
             Testimonials
           </p>

@@ -106,7 +106,7 @@ export default function Navbar() {
               className="flex justify-between items-center w-full text-white"
               target="_blank"
               rel="noreferrer"
-              href="/"
+              href="https://github.com/geokopa/geokopa/blob/main/George%20Kopadze%20Resume.pdf"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
