@@ -15,14 +15,14 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed z-20 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 border-b-2">
       <div>
-        <h2 className="text-4xl text-pink-600">GK</h2>
+        <h2 className="text-3xl text-pink-600">GK</h2>
       </div>
 
       {/* Navigation Menu*/}
 
-      <ul className="hidden md:flex h-14 items-center">
+      <ul className="hidden md:flex items-center">
         {NavigationItems.map((item: NavItem) => {
           return (
             <li

@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen flex justify-center items-center text-black"
+      className="w-full h-screen bg-white flex justify-center items-center p-4"
     >
-      <form action="" className="flex flex-col max-w-[600px] w-full">
+      <form action="" className="flex flex-col max-w-[600px] w-full mt-10">
         <div className="pb-8">
           <p className="text-4xl font-bold inline boder-b-4 border-pink-600 text-black">
             Contact
