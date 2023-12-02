@@ -97,31 +97,37 @@ export const NavigationItems: readonly NavItem[] = [
     id: 1,
     name: "Home",
     uri: "home",
+    offset: 0,
   },
   {
     id: 2,
     name: "About",
     uri: "about",
+    offset: -50,
   },
   {
     id: 3,
     name: "Skills",
     uri: "skills",
+    offset: 0,
   },
   {
     id: 4,
     name: "Projects",
     uri: "projects",
+    offset: -100,
   },
   {
     id: 5,
     name: "Testimonials",
     uri: "testimonials",
+    offset: -50,
   },
   {
     id: 6,
     name: "Contact",
     uri: "contact",
+    offset: -80,
   },
 ] as const;
 

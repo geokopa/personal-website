@@ -16,6 +16,7 @@ export interface NavItem {
   id: number;
   name: string;
   uri: string;
+  offset: number;
 }
 
 export interface TestimonialItem {
