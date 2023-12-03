@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
     >
       <div className="max-w-[1200px] mx-auto flex flex-col sm:justify-center w-full h-full sm:h-screen mb-10">
         <div className="mt-[30px] sm:mt-0">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 py-4">
+          <p className="text-2xl sm:text-4xl font-bold inline border-b-4 border-pink-600 py-4">
             Testimonials
           </p>
           <p className="py-8">// These are the technologies I've worked with</p>

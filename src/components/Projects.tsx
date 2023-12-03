@@ -23,7 +23,7 @@ const Projects = () => {
           <p className="py-6">// Check out some of my recent projects</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center">
           {/* Grid Item */}
           {ProjectsDataSet.map((item: Project) => (
             <ImageCard
@@ -41,7 +41,7 @@ const Projects = () => {
 
       {selectedProject && (
         <Modal open={open} onClose={() => setOpen(false)}>
-          <div className="w-[800px] h-auto">
+          <div className="w-72 sm:w-[650px] lg:w-[800px] h-auto">
             <div className="mb-4 w-full">
               <h3 className="text-lg sm:text-4xl font-black text-black">
                 {selectedProject.name}
@@ -49,7 +49,11 @@ const Projects = () => {
               <div className="text-sm text-black mt-5 flex flex-col">
                 <Carousel autoSlide={false} autoSlideInterval={3000}>
                   {selectedProject.images.map((image) => (
-                    <img key={image} src={image} className="w-full h-full" />
+                    <img
+                      key={image}
+                      src={image}
+                      className="w-72 h-56 sm:w-screen sm:h-full"
+                    />
                   ))}
                 </Carousel>
                 <div className="mt-4">
@@ -61,15 +65,15 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className="my-4">
+              <div className="my-4 hidden sm:block">
                 <span className="font-bold text-sm sm:text-lg">
                   Used Technologies:
                 </span>
-                <ul className="flex mt-4 gap-x-4">
+                <ul className="flex flex-col sm:flex-row mt-4 gap-3 gap-x-4">
                   {selectedProject.technologies.map((tech) => (
                     <li
                       key={tech}
-                      className="bg-red-500 shadow-md rounded-md text-white"
+                      className="bg-red-500 shadow-md rounded-md py-2 text-sm text-white"
                     >
                       {tech}
                     </li>
