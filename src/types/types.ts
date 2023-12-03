@@ -7,9 +7,11 @@ export interface Skill {
 export interface Project {
   id: number;
   name: string;
-  imageUri: string;
+  images: readonly string[];
   demoUri: string;
   sourceUri: string;
+  description: string;
+  technologies: readonly string[];
 }
 
 export interface NavItem {
