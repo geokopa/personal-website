@@ -3,7 +3,6 @@ import { ProjectsDataSet } from "../data/data";
 import { Project } from "../types/types";
 import Modal from "../components/ui/Modal";
 import ImageCard from "./ui/ImageCard";
-import { Bookmark, Heart, Share2 } from "react-feather";
 import Carousel from "./ui/Carousel";
 
 const Projects = () => {
