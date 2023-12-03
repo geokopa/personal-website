@@ -1,7 +1,18 @@
+import { useState } from "react";
 import { ProjectsDataSet } from "../data/data";
 import { Project } from "../types/types";
+import Modal from "../components/ui/Modal";
+import ImageCard from "./ui/ImageCard";
+import Carousel from "./ui/Carousel";
 
 const Projects = () => {
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+    setOpen(true);
+  };
   return (
     <div id="projects" className="w-full md:h-screen text-black bg-white">
       <div className="max-w-[1000px] mx-auto p-4 mt-6 flex flex-col justify-center w-full h-full">
@@ -12,46 +23,63 @@ const Projects = () => {
           <p className="py-6">// Check out some of my recent projects</p>
         </div>
 
-        {/* container for projects */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Gird Item */}
+          {/* Grid Item */}
           {ProjectsDataSet.map((item: Project) => (
-            <div
+            <ImageCard
+              imgSrc={item.images[0]}
               key={item.id}
-              style={{ backgroundImage: `url(${item.imageUri})` }}
-              className="shadow-md shadow-purple-600 group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div "
+              onClick={() => openModal(item)}
             >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                  {item.name}
-                </span>
-                <div className="pt-8 text-center ">
-                  {/* eslint-disable-next-line */}
-                  <a href={item.sourceUri} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Code
-                    </button>
-                  </a>
-                  {/* eslint-disable-next-line */}
-                  <a href={item.demoUri} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Live
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+              <h3 className="text-md sm:text-xl font-bold mb-2 text-white">
+                {item.name}
+              </h3>
+            </ImageCard>
           ))}
         </div>
       </div>
+
+      {selectedProject && (
+        <Modal open={open} onClose={() => setOpen(false)}>
+          <div className="w-[800px] h-auto">
+            <div className="mb-4 w-full">
+              <h3 className="text-lg sm:text-4xl font-black text-black">
+                {selectedProject.name}
+              </h3>
+              <div className="text-sm text-black mt-5 flex flex-col">
+                <Carousel autoSlide={false} autoSlideInterval={3000}>
+                  {selectedProject.images.map((image) => (
+                    <img key={image} src={image} className="w-full h-full" />
+                  ))}
+                </Carousel>
+                <div className="mt-4">
+                  <span className="font-bold text-sm sm:text-lg">
+                    Description:
+                  </span>
+                  <div className="text-sm sm:text-lg pt-2">
+                    {selectedProject.description}
+                  </div>
+                </div>
+              </div>
+              <div className="my-4">
+                <span className="font-bold text-sm sm:text-lg">
+                  Used Technologies:
+                </span>
+                <ul className="flex mt-4 gap-x-4">
+                  {selectedProject.technologies.map((tech) => (
+                    <li
+                      key={tech}
+                      className="bg-red-500 shadow-md rounded-md text-white"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };

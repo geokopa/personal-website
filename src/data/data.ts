@@ -1,5 +1,5 @@
 import { Skill, Project, NavItem, TestimonialItem } from "../types/types";
-import { SkillLogos } from "../data/images";
+import { SkillLogos, ProjectsThumbnails } from "../data/images";
 
 export const SkillsDataSet: readonly Skill[] = [
   {
@@ -49,46 +49,72 @@ export const ProjectsDataSet: readonly Project[] = [
   {
     id: 1,
     name: "GenteDrive",
-    imageUri: "https://via.placeholder.com/100",
+    images: ["https://via.placeholder.com/100"],
     demoUri: "https://via.placeholder.com/150",
     sourceUri: "https://via.placeholder.com/150",
+    description:
+      "GenteDrive is a software for SME businesses who has ride services.",
+    technologies: ["ASP.NET CORE", "SQL SERVER", "JavaScript", "React JS"],
   },
   {
     id: 2,
     name: "Project 2",
-    imageUri: "https://via.placeholder.com/100",
+    images: ["https://via.placeholder.com/100"],
     demoUri: "https://via.placeholder.com/150",
     sourceUri: "https://via.placeholder.com/150",
+    description: "Project 2 description",
+    technologies: [
+      "C#",
+      ".NET CORE",
+      "ASP.NET CORE",
+      "SQL SERVER",
+      "TypeScript",
+      "JavaScript",
+      "React JS",
+    ],
   },
   {
     id: 3,
     name: "Minisoft LTD Website",
-    imageUri: "../assets/projects/minisoft.png",
+    images: [ProjectsThumbnails.Minisoft, "https://via.placeholder.com/150"],
     demoUri: "http://www.minisoft.ge",
     sourceUri: "https://via.placeholder.com/150",
+    description:
+      "Minisoft LTD is a software development company. This website is developed by me.",
+    technologies: ["Angular", "JavaScript", "Bootstrap"],
   },
   {
     id: 4,
     name: "Congree Style Guide Manager",
-    imageUri:
+    images: [
       "https://www.congree.com/fileadmin/user_upload/style_guide_manager_2.png",
+    ],
     demoUri: "https://www.congree.com/en/tools",
     sourceUri: "https://via.placeholder.com/150",
+    description:
+      "Congree Style Guide Manager is a software for technical writers.",
+    technologies: ["C#", "ASP.NET CORE", "SQL SERVER", "Azure", "Angular"],
   },
   {
     id: 5,
     name: "Congree Authoring Tool",
-    imageUri:
+    images: [
       "https://www.congree.com/fileadmin/_processed_/1/6/csm_standard_756a959bb0.png",
+    ],
     demoUri: "https://www.congree.com/en/tools",
     sourceUri: "https://via.placeholder.com/150",
+    description: "Congree Authoring Tool is a software for technical writers.",
+    technologies: ["C#", "WPF", "SQL SERVER"],
   },
   {
     id: 6,
     name: "Ministry of Finance of Georgia Website",
-    imageUri: "https://via.placeholder.com/150",
+    images: ["https://via.placeholder.com/150"],
     demoUri: "https://www.mof.ge",
     sourceUri: "https://via.placeholder.com/150",
+    description:
+      "Ministry of Finance of Georgia is a government organization. This website is developed by me.",
+    technologies: ["Kentico CMS", ".NET CORE", "HTML", "CSS", "JavaScript"],
   },
 ] as const;
 
@@ -97,31 +123,37 @@ export const NavigationItems: readonly NavItem[] = [
     id: 1,
     name: "Home",
     uri: "home",
+    offset: 0,
   },
   {
     id: 2,
     name: "About",
     uri: "about",
+    offset: -50,
   },
   {
     id: 3,
     name: "Skills",
     uri: "skills",
+    offset: 0,
   },
   {
     id: 4,
     name: "Projects",
     uri: "projects",
+    offset: -100,
   },
   {
     id: 5,
     name: "Testimonials",
     uri: "testimonials",
+    offset: -50,
   },
   {
     id: 6,
     name: "Contact",
     uri: "contact",
+    offset: -80,
   },
 ] as const;
 

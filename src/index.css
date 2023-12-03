@@ -14,13 +14,32 @@
   }
 }
 
+@layer components {
+  .btn {
+    @apply flex gap-2 items-center justify-center py-2 px-4 font-semibold shadow-md rounded-lg;
+  }
+
+  .btn-light {
+    @apply text-[#3f3d56] bg-[#f1f5f9];
+  }
+
+  .btn-danger {
+    @apply text-white bg-red-600 shadow-red-400/40;
+  }
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 250px;
+  cursor: pointer;
 }
 
+.content-div:hover {
+  transform: scale(1.02);
+}
+/* 
 .content-div:hover {
   background-image: linear-gradient(
     to right,
@@ -28,4 +47,4 @@
     hsla(242, 74%, 61%, 0.8)
   ) !important;
   transition: 0.5s ease-in-out !important;
-}
+} */

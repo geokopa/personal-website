@@ -63,7 +63,7 @@ export default function Navbar() {
               <Link
                 to={item.uri}
                 smooth={true}
-                offset={0}
+                offset={item.offset}
                 duration={500}
                 onClick={handleMobileMenuClick}
               >
