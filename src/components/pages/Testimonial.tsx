@@ -1,6 +1,6 @@
 import React from "react";
-import { TestimonialsDataSource } from "../data/data";
-import { TestimonialItem } from "../types/types";
+import { TestimonialsDataSource } from "../../data/data";
+import { TestimonialItem } from "../../types/types";
 
 const Testimonials: React.FC = () => {
   // You can replace the data with your actual testimonials

@@ -1,5 +1,5 @@
-import { SkillsDataSet } from "../data/data";
-import { Skill } from "../types/types";
+import { SkillsDataSet } from "../../data/data";
+import { Skill } from "../../types/types";
 
 const Skills: React.FC = () => {
   return (

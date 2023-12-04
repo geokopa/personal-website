@@ -2,9 +2,9 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
-import { Link } from "react-scroll";
-import { NavItem } from "../types/types";
-import { NavigationItems } from "../data/data";
+import { Link as ScrollLink } from "react-scroll";
+import { NavItem } from "../../types/types";
+import { NavigationItems } from "../../data/data";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
               key={item.id}
               className="hover:border-b-2 border-pink-600 duration-100 h-8 items-center"
             >
-              <Link
+              <ScrollLink
                 to={item.uri}
                 smooth={true}
                 offset={0}
@@ -38,7 +38,7 @@ export default function Navbar() {
                 activeClass="text-pink-600"
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             </li>
           );
         })}
@@ -60,7 +60,7 @@ export default function Navbar() {
         {NavigationItems.map((item: NavItem) => {
           return (
             <li key={item.id} className="py-6 text-4xl">
-              <Link
+              <ScrollLink
                 to={item.uri}
                 smooth={true}
                 offset={item.offset}
@@ -68,7 +68,7 @@ export default function Navbar() {
                 onClick={handleMobileMenuClick}
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             </li>
           );
         })}
@@ -98,7 +98,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <Link
+            <ScrollLink
               to="contact"
               smooth={true}
               offset={0}
@@ -106,7 +106,7 @@ export default function Navbar() {
               className="flex justify-between items-center w-full text-white"
             >
               Email <HiOutlineMail size={30} />
-            </Link>
+            </ScrollLink>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
