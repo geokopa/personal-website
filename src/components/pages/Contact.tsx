@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen bg-white flex justify-center items-center p-4"
+      className="w-full h-screen bg-gray-100 flex justify-center items-center p-4"
     >
       <form
         action="https://getform.io/f/8eacaacc-14d9-4dd3-a680-5648d5473a8b"
@@ -38,7 +38,7 @@ const Contact = () => {
           name="message"
           placeholder="Message"
         ></textarea>
-        <button className="text-black border-2 hover:text-white hover:bg-pink-600 hover:border-pink-600 duration-300 px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="text-black border-2 bg-white hover:text-white hover:bg-pink-600 hover:border-pink-600 duration-300 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
       </form>
