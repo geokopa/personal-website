@@ -53,16 +53,17 @@ export const ProjectsDataSet: readonly Project[] = [
     demoUri: "https://via.placeholder.com/150",
     sourceUri: "https://via.placeholder.com/150",
     description:
-      "GenteDrive is a software for SME businesses who has ride services.",
+      "GenteDrive is a Trip Reservation System with advanced features like real-time booking, secure payment processing, and efficient itinerary management.",
     technologies: ["ASP.NET CORE", "SQL SERVER", "JavaScript", "React JS"],
   },
   {
     id: 2,
-    name: "Project 2",
-    images: ["https://via.placeholder.com/100"],
+    name: "VTB Bank Bonus Loyalty Program System",
+    images: ["https://vtb.ge/file/get/9176/VoeWNFQ4Wk65ha664SjDmQ"],
     demoUri: "https://via.placeholder.com/150",
     sourceUri: "https://via.placeholder.com/150",
-    description: "Project 2 description",
+    description:
+      "Earn points with every transaction for cashback rewards, special discounts, and priority customer service.",
     technologies: [
       "C#",
       ".NET CORE",
@@ -75,13 +76,13 @@ export const ProjectsDataSet: readonly Project[] = [
   },
   {
     id: 3,
-    name: "Minisoft LTD Website",
-    images: [ProjectsThumbnails.Minisoft, "https://via.placeholder.com/150"],
-    demoUri: "http://www.minisoft.ge",
+    name: "Georgian Diaspora Website",
+    images: [ProjectsThumbnails.Gda],
+    demoUri: "http://www.gda.ge",
     sourceUri: "https://via.placeholder.com/150",
     description:
-      "Minisoft LTD is a software development company. This website is developed by me.",
-    technologies: ["Angular", "JavaScript", "Bootstrap"],
+      "Official website of the Georgian Diaspora Association. The website is a platform for the Georgian Diaspora to connect with each other and with their homeland.",
+    technologies: ["ASP.NET Core", "Razor", "Bootstrap"],
   },
   {
     id: 4,
@@ -92,28 +93,28 @@ export const ProjectsDataSet: readonly Project[] = [
     demoUri: "https://www.congree.com/en/tools",
     sourceUri: "https://via.placeholder.com/150",
     description:
-      "Congree Style Guide Manager is a software for technical writers.",
+      "Congree Style Guide Manager integrates with various authoring tools and content management systems to ensure linguistic consistency and compliance with style guides throughout the content creation process",
     technologies: ["C#", "ASP.NET CORE", "SQL SERVER", "Azure", "Angular"],
   },
   {
     id: 5,
-    name: "Congree Authoring Tool",
+    name: "Congree Authoring Server",
     images: [
       "https://www.congree.com/fileadmin/_processed_/1/6/csm_standard_756a959bb0.png",
     ],
     demoUri: "https://www.congree.com/en/tools",
     sourceUri: "https://via.placeholder.com/150",
-    description: "Congree Authoring Tool is a software for technical writers.",
+    description:
+      "The Congree Authoring Server is a linguistic authoring support tool designed to assist writers and content creators in producing high-quality and consistent content. It integrates with various content creation environments, such as authoring tools and content management systems, to provide real-time linguistic support.",
     technologies: ["C#", "WPF", "SQL SERVER"],
   },
   {
     id: 6,
     name: "Ministry of Finance of Georgia Website",
-    images: ["https://via.placeholder.com/150"],
+    images: [ProjectsThumbnails.Mof],
     demoUri: "https://www.mof.ge",
     sourceUri: "https://via.placeholder.com/150",
-    description:
-      "Ministry of Finance of Georgia is a government organization. This website is developed by me.",
+    description: "Official website of the Ministry of Finance of Georgia",
     technologies: ["Kentico CMS", ".NET CORE", "HTML", "CSS", "JavaScript"],
   },
 ] as const;

@@ -28,23 +28,10 @@
   }
 }
 
-.content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  cursor: pointer;
+.card {
+  @apply bg-white rounded overflow-hidden shadow-md relative;
 }
 
-.content-div:hover {
-  transform: scale(1.02);
+.badge {
+  @apply bg-pink-400 text-white text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
 }
-/* 
-.content-div:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(112, 157, 255, 0.8),
-    hsla(242, 74%, 61%, 0.8)
-  ) !important;
-  transition: 0.5s ease-in-out !important;
-} */
