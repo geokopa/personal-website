@@ -16,12 +16,15 @@ const Clients = () => {
 
         <div className="w-full grid grid-cols-3 sm:grid-cols-4 items-center gap-8 text-center pb-[100px] sm:pb-0">
           {ClientsList.map((item: Client) => (
-            <div key={item.id} className="hover:scale-125 duration-300">
+            <div
+              key={item.id}
+              className="hover:scale-125 duration-300 flex flex-col gap-4"
+            >
               <a href={item.url} target="_blank" rel="noreferrer">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-32 mx-auto sm:w-32 grayscale hover:grayscale-0 transition-all duration-300"
+                  className="w-32 mx-auto sm:w-32 md:grayscale md:hover:grayscale-0 transition-all duration-300"
                 />
               </a>
             </div>
