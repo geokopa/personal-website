@@ -1,5 +1,5 @@
-import { Skill, Project, NavItem, TestimonialItem } from "../types/types";
-import { SkillLogos, ProjectsThumbnails } from "../data/images";
+import { Skill, NavItem, TestimonialItem, Client } from "../types/types";
+import { SkillLogos, ClientLogos } from "../data/images";
 
 export const SkillsDataSet: readonly Skill[] = [
   {
@@ -45,77 +45,108 @@ export const SkillsDataSet: readonly Skill[] = [
   },
 ] as const;
 
-export const ProjectsDataSet: readonly Project[] = [
+export const ClientsList: readonly Client[] = [
   {
     id: 1,
-    name: "GenteDrive",
-    images: ["https://via.placeholder.com/100"],
-    demoUri: "https://via.placeholder.com/150",
-    sourceUri: "https://via.placeholder.com/150",
+    name: "Ardi Insurance Company",
+    image: ClientLogos.Ardi,
+    position: "Technical Lead | Senior Software Engineer",
+    workYears: "2023 - Present",
+    url: "https://ardi.ge/",
     description:
-      "GenteDrive is a Trip Reservation System with advanced features like real-time booking, secure payment processing, and efficient itinerary management.",
-    technologies: ["ASP.NET CORE", "SQL SERVER", "JavaScript", "React JS"],
+      "Managing and leading software development team. Making technical decisions about technologies, architecture and design. Introduced software development best practices, tools and processes.",
   },
   {
     id: 2,
-    name: "VTB Bank Bonus Loyalty Program System",
-    images: ["https://vtb.ge/file/get/9176/VoeWNFQ4Wk65ha664SjDmQ"],
-    demoUri: "https://via.placeholder.com/150",
-    sourceUri: "https://via.placeholder.com/150",
+    name: "Pangea IT",
+    image: ClientLogos.Pangea,
+    position: "Senior Software Engineer",
+    workYears: "2023 - 2023",
+    url: "https://pangea-it.com/",
     description:
-      "Earn points with every transaction for cashback rewards, special discounts, and priority customer service.",
-    technologies: [
-      "C#",
-      ".NET CORE",
-      "ASP.NET CORE",
-      "SQL SERVER",
-      "TypeScript",
-      "JavaScript",
-      "React JS",
-    ],
+      "Designed and developed core microservices for Jamaica Election System. System is used for elections in Jamaica. Technologies used: ASP.NET Core, React, and SQL Server.",
   },
+
   {
     id: 3,
-    name: "Georgian Diaspora Website",
-    images: [ProjectsThumbnails.Gda],
-    demoUri: "http://www.gda.ge",
-    sourceUri: "https://via.placeholder.com/150",
+    name: "Congree Language Technologies GmbH",
+    image: ClientLogos.Congree,
+    position: "Senior Software Engineer",
+    workYears: "2021 - 2023",
+    url: "https://www.congree.com/",
     description:
-      "Official website of the Georgian Diaspora Association. The website is a platform for the Georgian Diaspora to connect with each other and with their homeland.",
-    technologies: ["ASP.NET Core", "Razor", "Bootstrap"],
+      "Developed backend services for WhatIMean system. Also, I was responsible for developing Congree Authoring Server services and Authoring Client Integrations with 3rd party systems. Technologies used: ASP.NET Core, WCF, WPF, MongoDB, Redis and SQL Server.",
   },
   {
     id: 4,
-    name: "Congree Style Guide Manager",
-    images: [
-      "https://www.congree.com/fileadmin/user_upload/style_guide_manager_2.png",
-    ],
-    demoUri: "https://www.congree.com/en/tools",
-    sourceUri: "https://via.placeholder.com/150",
+    name: "JSC TBC Bank Georgia",
+    image: ClientLogos.Tbc,
+    position: "Software Development Area Lead | Senior Software Engineer",
+    workYears: "2020 - 2021",
+    url: "https://www.tbcbank.ge/web/en/home",
     description:
-      "Congree Style Guide Manager integrates with various authoring tools and content management systems to ensure linguistic consistency and compliance with style guides throughout the content creation process",
-    technologies: ["C#", "ASP.NET CORE", "SQL SERVER", "Azure", "Angular"],
+      "I was responsible for leading software development area with 150+ developers. I was involved in all major projects and was responsible for technical decisions. Developed microservices for TBC Mobile & Internet Banking application.",
   },
   {
     id: 5,
-    name: "Congree Authoring Server",
-    images: [
-      "https://www.congree.com/fileadmin/_processed_/1/6/csm_standard_756a959bb0.png",
-    ],
-    demoUri: "https://www.congree.com/en/tools",
-    sourceUri: "https://via.placeholder.com/150",
+    name: "JSC VTB Bank Georgia",
+    image: ClientLogos.Vtb,
+    position:
+      "Senior Software Engineer | Head of Software Development Department",
+    workYears: "2017 - 2021",
+    url: "https://www.vtb.ge/en",
     description:
-      "The Congree Authoring Server is a linguistic authoring support tool designed to assist writers and content creators in producing high-quality and consistent content. It integrates with various content creation environments, such as authoring tools and content management systems, to provide real-time linguistic support.",
-    technologies: ["C#", "WPF", "SQL SERVER"],
+      "I designed and developed VTB Loyalty Bonus system for VTB Bank Georgia. System was used for calculate and distribute bonuses for customers based on their spendings. Technologies used: ASP.NET Core, React, RabbitMQ, Redis and SQL Server. Developed backend services for Apple Pay. Working on accounts commisions module and other internal core systems.",
   },
   {
     id: 6,
-    name: "Ministry of Finance of Georgia Website",
-    images: [ProjectsThumbnails.Mof],
-    demoUri: "https://www.mof.ge",
-    sourceUri: "https://via.placeholder.com/150",
-    description: "Official website of the Ministry of Finance of Georgia",
-    technologies: ["Kentico CMS", ".NET CORE", "HTML", "CSS", "JavaScript"],
+    name: "Ministry of Foreign Affairs of Georgia",
+    image: ClientLogos.Mfa,
+    position: "Senior Software Engineer",
+    workYears: "2020 - 2020",
+    url: "https://mfa.gov.ge/MainNav/AboutMFAEN",
+    description:
+      "Developed internal software for elections. System was used for select best candidates for International Expert Council. Technologies used: ASP.NET Core, HTML5, CSS, Bootstrap and SQL Server.",
+  },
+  {
+    id: 7,
+    name: "GPI Holding - Vienna Insurance Group",
+    image: ClientLogos.Gpi,
+    position: "Senior Software Engineer",
+    workYears: "2018 - 2020",
+    url: "https://www.gpih.ge/en/",
+    description:
+      "Working on insurance core system. Integrated with 3rd party payment systems. Technologies used: ASP.NET Core, Kendo UI, WCF and SQL Server.",
+  },
+  {
+    id: 8,
+    name: "Ministry of Finance of Georgia",
+    image: ClientLogos.Mof,
+    position: "Senior Software Engineer",
+    workYears: "2020 - 2021",
+    url: "https://mof.ge/en",
+    description:
+      "I created students registration system for government grants. Interns hiring, managing and monitoring system. Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
+  },
+  {
+    id: 9,
+    name: "International Migration Organization",
+    image: ClientLogos.IOM,
+    position: "Senior Software Engineer",
+    workYears: "2020 - 2021",
+    url: "https://www.iom.int/",
+    description:
+      "IOM Sponsored the Project for Georgian Diaspora's website development. I was responsible for the development of the website. Content management system was developed using ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server. Website: https://gda.ge/",
+  },
+  {
+    id: 10,
+    name: "Ministry of Education and Science of Georgia",
+    image: ClientLogos.Education,
+    position: "Software Engineer",
+    workYears: "2012 - 2013",
+    url: "https://eqe.ge",
+    description:
+      "I created internal web applications like (Visitor Management System, Conference Room Reservation System, Integrations with other governemental systems and warehouse management system). Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
   },
 ] as const;
 
@@ -140,18 +171,24 @@ export const NavigationItems: readonly NavItem[] = [
   },
   {
     id: 4,
-    name: "Projects",
-    uri: "projects",
-    offset: -100,
+    name: "Work Experience",
+    uri: "timeline",
+    offset: -50,
   },
   {
     id: 5,
+    name: "Clients",
+    uri: "clients",
+    offset: -100,
+  },
+  {
+    id: 6,
     name: "Testimonials",
     uri: "testimonials",
     offset: -50,
   },
   {
-    id: 6,
+    id: 7,
     name: "Contact",
     uri: "contact",
     offset: -80,
