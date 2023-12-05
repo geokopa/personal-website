@@ -4,14 +4,14 @@ export interface Skill {
   icon: string;
 }
 
-export interface Project {
+export interface Client {
   id: number;
   name: string;
-  images: readonly string[];
-  demoUri: string;
-  sourceUri: string;
-  description: string;
-  technologies: readonly string[];
+  image: string;
+  position: string;
+  workYears: string;
+  url: string;
+  description?: string;
 }
 
 export interface NavItem {

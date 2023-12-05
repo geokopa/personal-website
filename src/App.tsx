@@ -4,7 +4,8 @@ import Home from "./components/pages/Home";
 import Navbar from "./components/shared/Navbar";
 import Skills from "./components/pages/Skills";
 import Testimonials from "./components/pages/Testimonial";
-import Projects from "./components/pages/Projects";
+import Clients from "./components/pages/Clients";
+import Timeline from "./components/pages/Timeline";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Skills />
-      <Projects />
+      <Timeline />
+      <Clients />
+      {/* <Skills /> */}
       <Testimonials />
       <Contact />
     </>

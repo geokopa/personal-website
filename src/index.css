@@ -29,7 +29,7 @@
 }
 
 .card {
-  @apply bg-white rounded overflow-hidden shadow-md relative;
+  @apply bg-transparent rounded;
 }
 
 .badge {
