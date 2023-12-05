@@ -51,7 +51,7 @@ export const ClientsList: readonly Client[] = [
     name: "Ardi Insurance Company",
     image: ClientLogos.Ardi,
     position: "Technical Lead | Senior Software Engineer",
-    workYears: "2023 - Present",
+    workYears: "Sep 2023 - Present",
     url: "https://ardi.ge/",
     description:
       "Managing and leading software development team. Making technical decisions about technologies, architecture and design. Introduced software development best practices, tools and processes.",
@@ -61,7 +61,7 @@ export const ClientsList: readonly Client[] = [
     name: "Pangea IT",
     image: ClientLogos.Pangea,
     position: "Senior Software Engineer",
-    workYears: "2023 - 2023",
+    workYears: "Mar 2023 - Oct 2023",
     url: "https://pangea-it.com/",
     description:
       "Designed and developed core microservices for Jamaica Election System. System is used for elections in Jamaica. Technologies used: ASP.NET Core, React, and SQL Server.",
@@ -72,7 +72,7 @@ export const ClientsList: readonly Client[] = [
     name: "Congree Language Technologies GmbH",
     image: ClientLogos.Congree,
     position: "Senior Software Engineer",
-    workYears: "2021 - 2023",
+    workYears: "Nov 2021 - Jun 2023",
     url: "https://www.congree.com/",
     description:
       "Developed backend services for WhatIMean system. Also, I was responsible for developing Congree Authoring Server services and Authoring Client Integrations with 3rd party systems. Technologies used: ASP.NET Core, WCF, WPF, MongoDB, Redis and SQL Server.",
@@ -82,7 +82,7 @@ export const ClientsList: readonly Client[] = [
     name: "JSC TBC Bank Georgia",
     image: ClientLogos.Tbc,
     position: "Software Development Area Lead | Senior Software Engineer",
-    workYears: "2020 - 2021",
+    workYears: "Sep 2020 - Jul 2022",
     url: "https://www.tbcbank.ge/web/en/home",
     description:
       "I was responsible for leading software development area with 150+ developers. I was involved in all major projects and was responsible for technical decisions. Developed microservices for TBC Mobile & Internet Banking application.",
@@ -93,7 +93,7 @@ export const ClientsList: readonly Client[] = [
     image: ClientLogos.Vtb,
     position:
       "Senior Software Engineer | Head of Software Development Department",
-    workYears: "2017 - 2021",
+    workYears: "Mar 2017 - Sep 2020",
     url: "https://www.vtb.ge/en",
     description:
       "I designed and developed VTB Loyalty Bonus system for VTB Bank Georgia. System was used for calculate and distribute bonuses for customers based on their spendings. Technologies used: ASP.NET Core, React, RabbitMQ, Redis and SQL Server. Developed backend services for Apple Pay. Working on accounts commisions module and other internal core systems.",
@@ -103,7 +103,7 @@ export const ClientsList: readonly Client[] = [
     name: "Ministry of Foreign Affairs of Georgia",
     image: ClientLogos.Mfa,
     position: "Senior Software Engineer",
-    workYears: "2020 - 2020",
+    workYears: "Mar 2017 - Dec 2020",
     url: "https://mfa.gov.ge/MainNav/AboutMFAEN",
     description:
       "Developed internal software for elections. System was used for select best candidates for International Expert Council. Technologies used: ASP.NET Core, HTML5, CSS, Bootstrap and SQL Server.",
@@ -113,7 +113,7 @@ export const ClientsList: readonly Client[] = [
     name: "GPI Holding - Vienna Insurance Group",
     image: ClientLogos.Gpi,
     position: "Senior Software Engineer",
-    workYears: "2018 - 2020",
+    workYears: "Mar 2017 - Dec 2017",
     url: "https://www.gpih.ge/en/",
     description:
       "Working on insurance core system. Integrated with 3rd party payment systems. Technologies used: ASP.NET Core, Kendo UI, WCF and SQL Server.",
@@ -123,7 +123,7 @@ export const ClientsList: readonly Client[] = [
     name: "Ministry of Finance of Georgia",
     image: ClientLogos.Mof,
     position: "Senior Software Engineer",
-    workYears: "2020 - 2021",
+    workYears: "Mar 2013 - Feb 2017",
     url: "https://mof.ge/en",
     description:
       "I created students registration system for government grants. Interns hiring, managing and monitoring system. Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
@@ -133,7 +133,7 @@ export const ClientsList: readonly Client[] = [
     name: "International Migration Organization",
     image: ClientLogos.IOM,
     position: "Senior Software Engineer",
-    workYears: "2020 - 2021",
+    workYears: "Mar 2018 -  Dec 2018",
     url: "https://www.iom.int/",
     description:
       "IOM Sponsored the Project for Georgian Diaspora's website development. I was responsible for the development of the website. Content management system was developed using ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server. Website: https://gda.ge/",
@@ -143,7 +143,7 @@ export const ClientsList: readonly Client[] = [
     name: "Ministry of Education and Science of Georgia",
     image: ClientLogos.Education,
     position: "Software Engineer",
-    workYears: "2012 - 2013",
+    workYears: "Jan 2012 - Mar 2013",
     url: "https://eqe.ge",
     description:
       "I created internal web applications like (Visitor Management System, Conference Room Reservation System, Integrations with other governemental systems and warehouse management system). Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
