@@ -22,13 +22,13 @@ const Home = () => {
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
             <Link
-              to="projects"
+              to="timeline"
               smooth={true}
               offset={50}
               duration={500}
               className="flex justify-center items-center"
             >
-              View Projects
+              View Experiences
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3 " />
               </span>
