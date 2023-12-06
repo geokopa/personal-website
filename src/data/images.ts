@@ -13,7 +13,7 @@ import Vtb from "../assets/images/clients/vtb.png";
 import Tbc from "../assets/images/clients/tbc.svg";
 import Pangea from "../assets/images/clients/pangea.png";
 import Gpi from "../assets/images/clients/gpi.png";
-import Ardi from "../assets/images/clients/ardi.png";
+import Ardi from "../assets/images/clients/ard.png";
 import IOM from "../assets/images/clients/iom.svg";
 import Mfa from "../assets/images/clients/mfa.png";
 import Congree from "../assets/images/clients/congree.png";
