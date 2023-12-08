@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoTailwindCss, BiLogoGithub } from "react-icons/bi";
 import { TbBrandTypescript, TbBrandVite } from "react-icons/tb";
 
 const Footer = () => {
@@ -37,6 +37,14 @@ const Footer = () => {
           className="hover:text-gray-300"
         >
           <BiLogoTailwindCss className="h-6 w-6" />
+        </a>
+        <a
+          href="https://github.com/geokopa/personal-website"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-300"
+        >
+          <BiLogoGithub className="h-6 w-6" />
         </a>
       </div>
     </footer>
