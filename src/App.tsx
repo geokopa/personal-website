@@ -6,6 +6,7 @@ import Navbar from "./components/shared/Navbar";
 import Testimonials from "./components/pages/Testimonial";
 import Clients from "./components/pages/Clients";
 import Timeline from "./components/pages/Timeline";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* <Skills /> */}
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }
