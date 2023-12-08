@@ -91,15 +91,24 @@ export const ClientsList: readonly Client[] = [
     id: 5,
     name: "JSC VTB Bank Georgia",
     image: ClientLogos.Vtb,
-    position:
-      "Senior Software Engineer | Head of Software Development Department",
-    workYears: "Mar 2017 - Sep 2020",
+    position: "Head of Software Development Department",
+    workYears: "Nov 2018 - Sep 2020",
     url: "https://www.vtb.ge/en",
     description:
-      "I designed and developed VTB Loyalty Bonus system for VTB Bank Georgia. System was used for calculate and distribute bonuses for customers based on their spendings. Technologies used: ASP.NET Core, React, RabbitMQ, Redis and SQL Server. Developed backend services for Apple Pay. Working on accounts commisions module and other internal core systems.",
+      "I played a leadership role in the software development division, overseeing a team of 17 developers. My responsibilities encompassed active participation in significant projects, making key technical decisions, and formulating Software Development Strategies. Additionally, I took charge of defining long-term goals to foster the development of team members and actively contributed to enhancing the Software Development Life Cycle (SDLC) processes.",
   },
   {
     id: 6,
+    name: "JSC VTB Bank Georgia",
+    image: ClientLogos.Vtb,
+    position: "Senior Software Engineer",
+    workYears: "Mar 2017 - Nov 2018",
+    url: "https://www.vtb.ge/en",
+    description:
+      "I orchestrated the design and development of the VTB Loyalty Bonus system for VTB Bank Georgia. This system, integral to the bank's operations, facilitated the calculation and distribution of bonuses to customers based on their expenditures. Employing a tech stack comprising ASP.NET Core, React, RabbitMQ, Redis, and SQL Server, I ensured the seamless integration of these technologies. In addition to this, I took on the task of developing backend services tailored for Apple Pay, and delved into the implementation of the accounts commissions module. My contributions extended to various internal core systems, including the development of the SMS Service Billing, Cash-In ATM services, and the SME Loan Module.",
+  },
+  {
+    id: 7,
     name: "Ministry of Foreign Affairs of Georgia",
     image: ClientLogos.Mfa,
     position: "Senior Software Engineer",
@@ -107,16 +116,6 @@ export const ClientsList: readonly Client[] = [
     url: "https://mfa.gov.ge/MainNav/AboutMFAEN",
     description:
       "Developed internal software for elections. System was used for select best candidates for International Expert Council. Technologies used: ASP.NET Core, HTML5, CSS, Bootstrap and SQL Server.",
-  },
-  {
-    id: 7,
-    name: "GPI Holding - Vienna Insurance Group",
-    image: ClientLogos.Gpi,
-    position: "Senior Software Engineer",
-    workYears: "Mar 2017 - Dec 2017",
-    url: "https://www.gpih.ge/en/",
-    description:
-      "Working on insurance core system. Integrated with 3rd party payment systems. Technologies used: ASP.NET Core, Kendo UI, WCF and SQL Server.",
   },
   {
     id: 8,
@@ -146,7 +145,7 @@ export const ClientsList: readonly Client[] = [
     workYears: "Jan 2012 - Mar 2013",
     url: "https://eqe.ge",
     description:
-      "I created internal web applications like (Visitor Management System, Conference Room Reservation System, Integrations with other governemental systems and warehouse management system). Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
+      "I created internal web applications like (Visitor Management System, Conference Room Reservation System, Integrations with other governmental systems and warehouse management system). Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
   },
 ] as const;
 
@@ -161,7 +160,7 @@ export const NavigationItems: readonly NavItem[] = [
     id: 2,
     name: "About",
     uri: "about",
-    offset: -50,
+    offset: -70,
   },
   // {
   //   id: 3,
@@ -173,13 +172,13 @@ export const NavigationItems: readonly NavItem[] = [
     id: 3,
     name: "Work Experience",
     uri: "timeline",
-    offset: -50,
+    offset: -80,
   },
   {
     id: 4,
     name: "Clients",
     uri: "clients",
-    offset: -100,
+    offset: -75,
   },
   {
     id: 5,

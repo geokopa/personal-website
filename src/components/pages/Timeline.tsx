@@ -3,7 +3,7 @@ import { Client } from "../../types/types";
 
 const Timeline = () => {
   return (
-    <div id="timeline" className=" bg-[#0a192f] pt-0 sm:pt-48 md:pt-32 px-6">
+    <div id="timeline" className=" bg-[#0a192f] pt-0 sm:pt-32 md:pt-16 px-6">
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center sm:justify-center w-full h-full sm:h-screen sm:p-4">
         <div className="mt-[100px] sm:mt-0">
           <p className="text-3xl sm:text-4xl font-bold inline border-b-4 border-pink-600 py-4 text-[#ccd6f6]">
@@ -15,7 +15,7 @@ const Timeline = () => {
         <ol className="relative border-s border-gray-200 dark:border-gray-700  bg-[#0a192f] p-6">
           {ClientsList.map((client: Client) => {
             return (
-              <li className="mb-10 ms-6" key={client.id}>
+              <li className="mb-8 ms-6" key={client.id}>
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                   <svg
                     className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
