@@ -1,4 +1,4 @@
-import { ClientsList } from "../../data/data";
+import { ClientList } from "../../data/data";
 import { Client } from "../../types/types";
 
 const Clients = () => {
@@ -15,7 +15,7 @@ const Clients = () => {
         </div>
 
         <div className="w-full grid grid-cols-3 sm:grid-cols-4 items-center gap-8 text-center pb-[100px] sm:pb-0">
-          {ClientsList.map((item: Client) => (
+          {ClientList.map((item: Client) => (
             <div
               key={item.id}
               className="hover:scale-125 duration-300 flex flex-col gap-4"

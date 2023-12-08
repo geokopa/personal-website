@@ -1,5 +1,5 @@
-import { ClientsList } from "../../data/data";
-import { Client } from "../../types/types";
+import { ExperienceList } from "../../data/data";
+import { ExperienceItem } from "../../types/types";
 
 const Timeline = () => {
   return (
@@ -13,7 +13,7 @@ const Timeline = () => {
         </div>
 
         <ol className="relative border-s border-gray-200 dark:border-gray-700  bg-[#0a192f] p-6">
-          {ClientsList.map((client: Client) => {
+          {ExperienceList.map((client: ExperienceItem) => {
             return (
               <li className="mb-8 ms-6" key={client.id}>
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">

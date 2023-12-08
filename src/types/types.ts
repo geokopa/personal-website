@@ -4,14 +4,19 @@ export interface Skill {
   icon: string;
 }
 
+export interface ExperienceItem {
+  id: number;
+  name: string;
+  position: string;
+  workYears: string;
+  description?: string;
+}
+
 export interface Client {
   id: number;
   name: string;
   image: string;
-  position: string;
-  workYears: string;
   url: string;
-  description?: string;
 }
 
 export interface NavItem {
