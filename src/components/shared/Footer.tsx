@@ -1,6 +1,6 @@
-import { FaReact, FaCss3Alt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { BiLogoTailwindCss } from "react-icons/bi";
-import { TbBrandHtml5, TbBrandTypescript, TbBrandVite } from "react-icons/tb";
+import { TbBrandTypescript, TbBrandVite } from "react-icons/tb";
 
 const Footer = () => {
   return (
