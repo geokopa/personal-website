@@ -59,12 +59,12 @@ jobs:
         id: get_release_id
         run: echo "RELEASE_ID=${{ steps.create_release.outputs.id }}" >> $GITHUB_ENV
 
-      - name: Upload Release Artifact
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist
-          asset_name: release-${{ github.run_number }}.zip # Change the name as needed
-          asset_content_type: application/zip
+      # - name: Upload Release Artifact
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: ./dist
+      #     asset_name: release-${{ github.run_number }}.zip # Change the name as needed
+      #     asset_content_type: application/zip
