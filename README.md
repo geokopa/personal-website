@@ -1,30 +1,85 @@
-# React + TypeScript + Vite
+# George Kopadze' Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](screen.png)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the code for my personal portfolio website, developed using ReactJS, Vite, and TailwindCSS. The portfolio showcases my clients, work experience timeline, homepage, about me, and a contact form.
 
-## Expanding the ESLint configuration
+### Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Homepage**: A brief introduction and highlights.
+- **About Me**: Detailed information about my skills, experiences, and interests.
+- **Work Experience Timeline**: An interactive timeline showcasing my professional journey.
+- **Clients**: A list of clients or projects I've worked on.
+- **Contact Me**: A contact form for anyone interested in reaching out.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [ReactJS](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Navigate to the project directory:
+
+```bash
+cd your-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Running the Application
+
+```bash
+npm run dev
+```
+
+The application will be accessible at http://localhost:5173
+
+# Project Structure
+
+|-- public
+|-- src
+|-- components
+|-- pages
+|-- shared
+|-- ui
+|-- data
+|-- props
+|-- types
+|-- .gitignore
+|-- package.json
+|-- README.md
+|-- ... (other configuration files)
+
+## Contributing
+
+If you'd like to contribute, please follow our contribution guidelines.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries, feel free to reach out to me at kopadze@gmail.com
+
+Remember to customize the placeholders and add any specific information relevant to your project.
