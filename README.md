@@ -1,6 +1,6 @@
 # George Kopadze' Portfolio Website
 
-![Portfolio Preview](url-to-your-portfolio-screenshot.png)
+![Portfolio Preview](screen.png)
 
 ## Overview
 
@@ -58,13 +58,13 @@ The application will be accessible at http://localhost:5173
 
 |-- public
 |-- src
-    |-- components
-      |-- pages
-      |-- shared
-      |-- ui
-    |-- data
-    |-- props
-    |-- types
+|-- components
+|-- pages
+|-- shared
+|-- ui
+|-- data
+|-- props
+|-- types
 |-- .gitignore
 |-- package.json
 |-- README.md
