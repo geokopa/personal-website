@@ -32,3 +32,10 @@ export interface TestimonialItem {
   name: string;
   position: string;
 }
+
+export interface CertificateItem {
+  id: number;
+  name: string;
+  image: string;
+  url: string;
+}

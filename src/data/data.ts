@@ -4,6 +4,7 @@ import {
   TestimonialItem,
   Client,
   ExperienceItem,
+  CertificateItem,
 } from "../types/types";
 import { SkillLogos, ClientLogos } from "../data/images";
 
@@ -122,7 +123,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Technical Lead | Senior Software Engineer",
     workYears: "Sep 2023 - Present",
     description:
-      "Managing and leading software development team. Making technical decisions about technologies, architecture and design. Introduced software development best practices, tools and processes.",
+      "Leading Ardi Insurance's software development, I shape our tech strategy, implementing best practices, tools, and CI/CD pipelines via GitLab. I foster a culture of knowledge sharing, conduct code reviews, and introduced a centralized logging system for efficient troubleshooting—dedicated to elevating our team's prowess.",
   },
   {
     id: 2,
@@ -130,7 +131,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Senior Software Engineer",
     workYears: "Mar 2023 - Oct 2023",
     description:
-      "Designed and developed core microservices for Jamaica Election System. System is used for elections in Jamaica. Technologies used: ASP.NET Core, React, and SQL Server.",
+      "I played a key role in designing and implementing the Electoral Registration System—a robust platform for streamlining the electoral registration process. Leveraging my expertise in system architecture and development, I contributed to creating a secure, efficient, and user-friendly system using ASP.NET Core, React, and SQL Server for reliable and up-to-date voter records.",
   },
 
   {
@@ -139,7 +140,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Senior Software Engineer",
     workYears: "Nov 2021 - Jun 2023",
     description:
-      "Developed backend services for WhatIMean system. Also, I was responsible for developing Congree Authoring Server services and Authoring Client Integrations with 3rd party systems. Technologies used: ASP.NET Core, WCF, WPF, MongoDB, Redis and SQL Server.",
+      "As a Senior Software Engineer at Congree Language Technologies, I significantly contributed to the development of backend services for the WhatIMean system (https://whatimean.com/de/). I also played a key role in enhancing the functionality and interoperability of Congree's language technology solutions, using a diverse tech stack including ASP.NET Core, WCF, WPF, MongoDB, Redis, and SQL Server.",
   },
   {
     id: 4,
@@ -147,7 +148,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Software Development Area Lead | Senior Software Engineer",
     workYears: "Sep 2020 - Jul 2022",
     description:
-      "I was responsible for leading software development area with 150+ developers. I was involved in all major projects and was responsible for technical decisions. Developed microservices for TBC Mobile & Internet Banking application.",
+      "As TBC's Chapter Area Lead for Front System Development, I led a team of 150+ developers, guiding major projects with a focus on technical leadership. I played a hands-on role in developing microservices for the TBC Mobile & Internet Banking app, showcasing expertise in ASP.NET Core, Redis, SQL Server, and RabbitMQ.",
   },
   {
     id: 5,
@@ -155,7 +156,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Head of Software Development Department",
     workYears: "Nov 2018 - Sep 2020",
     description:
-      "I played a leadership role in the software development division, overseeing a team of 17 developers. My responsibilities encompassed active participation in significant projects, making key technical decisions, and formulating Software Development Strategies. Additionally, I took charge of defining long-term goals to foster the development of team members and actively contributed to enhancing the Software Development Life Cycle (SDLC) processes.",
+      "I led software development division, overseeing a team of 17 developers. My responsibilities encompassed active participation in significant projects, making key technical decisions, and formulating Software Development Strategies. Additionally, I took charge of defining long-term goals to foster the development of team members and actively contributed to enhancing the Software Development Life Cycle (SDLC) processes.",
   },
   {
     id: 6,
@@ -163,7 +164,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Senior Software Engineer",
     workYears: "Mar 2017 - Nov 2018",
     description:
-      "I orchestrated the design and development of the VTB Loyalty Bonus system for VTB Bank Georgia. This system, integral to the bank's operations, facilitated the calculation and distribution of bonuses to customers based on their expenditures. Employing a tech stack comprising ASP.NET Core, React, RabbitMQ, Redis, and SQL Server, I ensured the seamless integration of these technologies. In addition to this, I took on the task of developing backend services tailored for Apple Pay, and delved into the implementation of the accounts commissions module. My contributions extended to various internal core systems, including the development of the SMS Service Billing, Cash-In ATM services, and the SME Loan Module.",
+      "I designed and developed of VTB Bank Georgia's crucial Loyalty Bonus system. This system, vital to the bank's operations, calculated and distributed customer bonuses based on expenditures. Using a tech stack of ASP.NET Core, React, RabbitMQ, Redis, and SQL Server, I ensured seamless integration. I also developed backend services for Apple Pay, and contributed to internal core systems, including SMS Service Billing, Cash-In ATM services, and the SME Loan Module.",
   },
   {
     id: 7,
@@ -171,7 +172,7 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Senior Software Engineer",
     workYears: "Mar 2017 - Dec 2020",
     description:
-      "Developed internal software for elections. System was used for select best candidates for International Expert Council. Technologies used: ASP.NET Core, HTML5, CSS, Bootstrap and SQL Server.",
+      "As a Senior Software Engineer at the Ministry of Foreign Affairs of Georgia, I played a key role in developing internal election software. This system, crucial for selecting International Expert Council candidates, utilized ASP.NET Core, HTML5, CSS, Bootstrap, and SQL Server. I consistently championed the use of cutting-edge technologies for transparent and efficient government processes.",
   },
   {
     id: 8,
@@ -184,10 +185,11 @@ export const ExperienceList: readonly ExperienceItem[] = [
   {
     id: 9,
     name: "International Migration Organization",
-    position: "Senior Software Engineer",
+    position:
+      "Lead Developer | IOM Sponsored Project - Georgian Diaspora Website",
     workYears: "Mar 2018 -  Dec 2018",
     description:
-      "IOM Sponsored the Project for Georgian Diaspora's website development. I was responsible for the development of the website. Content management system was developed using ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server. Website: https://gda.ge/",
+      "I spearheaded the development of the Georgian Diaspora website, a project sponsored by IOM. As the lead developer, I took charge of crafting a robust content management system using ASP.NET MVC, HTML5, CSS, Bootstrap, and SQL Server. The website, accessible at https://gda.ge/, stands as a testament to my hands-on involvement in delivering impactful web solutions within the framework of international initiatives.",
   },
   {
     id: 10,
@@ -195,7 +197,15 @@ export const ExperienceList: readonly ExperienceItem[] = [
     position: "Software Engineer",
     workYears: "Jan 2012 - Mar 2013",
     description:
-      "I created internal web applications like (Visitor Management System, Conference Room Reservation System, Integrations with other governmental systems and warehouse management system). Technologies used: ASP.NET MVC, HTML5, CSS, Bootstrap and SQL Server.",
+      "I pioneered the development of crucial internal web applications, including a Visitor Management System, Conference Room Reservation System, Integrations with other governmental systems, and a Warehouse Management System. Leveraging a technology stack of ASP.NET MVC, HTML5, CSS, Bootstrap, and SQL Server, I ensured the seamless integration of these systems, contributing to enhanced operational efficiency and functionality within the organizational framework..",
+  },
+  {
+    id: 11,
+    name: "Saatec Ltd",
+    position: "Junior Software Engineer",
+    workYears: "Apr 2010 – Mar 2012",
+    description:
+      "I developed and maintained web forms applications, crafted modules for an in-house CMS (later upgraded to NopCommerce), and implemented Windows Background Services for automated daily tasks.",
   },
 ] as const;
 
@@ -266,5 +276,22 @@ Aside from his technical prowess, George also demonstrated stellar interpersonal
     text: `"I'm thrilled of George as a senior .Net developer, good team player and simply a good person. George is a highly skilled professional with demonstrated experience in software development, good interpersonal and communication skills. I appreciate his work and what he did in our company in Pangea and I'm happy I had a chance to work with him. I highly recommend George to everyone who seeks motivated and skillful professionals with a high sense of responsibilities"`,
     name: "Temur Japaridze",
     position: "Co-Founder and Managing Partner @ DevGate",
+  },
+] as const;
+
+export const CertificatesList: readonly CertificateItem[] = [
+  {
+    id: 1,
+    name: "MTA: Software Development Fundamentals - Certified 2021",
+    image:
+      "https://images.credly.com/size/680x680/images/c2537593-9f53-4901-9207-f51376ce7150/MTA-Software_Development_Fundamentals-600x600.png",
+    url: "https://www.credly.com/badges/b0dfde10-33ae-41fe-850b-e1fda66ea71d?source=linked_in_profile",
+  },
+  {
+    id: 2,
+    name: "Exam 486: Developing ASP.NET MVC Web Applications",
+    image:
+      "https://images.credly.com/size/680x680/images/cbab3216-025d-4601-86ee-c5970b348d48/Developing_ASP.NET_MVC_Web_Applications-01.png",
+    url: "https://www.credly.com/badges/c01c5be8-33af-4053-a234-d1a64a55c1e9?source=linked_in_profile",
   },
 ] as const;

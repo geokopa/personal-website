@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { NavItem } from "../../types/types";
 import { NavigationItems } from "../../data/data";
+import { FaRegFilePdf } from "react-icons/fa6";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -72,6 +73,11 @@ export default function Navbar() {
             </li>
           );
         })}
+        <li className="py-6 text-4xl">
+          <a href="George_Kopadze_Resume.pdf" target="_blank" rel="noreferrer">
+            Download Resume
+          </a>
+        </li>
       </ul>
 
       {/* Social Icons */}
@@ -113,9 +119,9 @@ export default function Navbar() {
               className="flex justify-between items-center w-full text-white"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/geokopa/geokopa/blob/main/George%20Kopadze%20Resume.pdf"
+              href="George_Kopadze_Resume.pdf"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Resume <FaRegFilePdf size={30} />
             </a>
           </li>
         </ul>
