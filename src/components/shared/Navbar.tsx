@@ -59,7 +59,7 @@ export default function Navbar() {
       >
         {NavigationItems.map((item: NavItem) => {
           return (
-            <li key={item.id} className="py-6 text-4xl">
+            <li key={item.id} className="py-6 text-3xl">
               <ScrollLink
                 to={item.uri}
                 smooth={true}
@@ -72,7 +72,7 @@ export default function Navbar() {
             </li>
           );
         })}
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <a href="George_Kopadze_Resume.pdf" target="_blank" rel="noreferrer">
             Download Resume
           </a>
